@@ -1,0 +1,14 @@
+<a name="unreleased"></a>
+## [Unreleased]
+
+### Docs
+- Atualiza CHANGELOG p/ versão 0.1.0
+
+
+<a name="0.1.0"></a>
+## 0.1.0 - 2021-12-23
+### Feat
+- soma dois valores
+
+
+[Unreleased]: https://github.com/SamLucas/teste_git_chlog/compare/0.1.0...HEAD
