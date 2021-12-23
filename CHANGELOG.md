@@ -1,6 +1,12 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Docs
+- Atualiza CHANGELOG p/ versão 0.1.1
+
+### Feat
+- adicinando menu de navegação e multiplicação de números
+
 
 <a name="0.1.1"></a>
 ## [0.1.1] - 2021-12-23
