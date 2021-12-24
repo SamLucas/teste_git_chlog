@@ -36,13 +36,33 @@ const divisaoService = async () => {
   console.log("O resultado da divisão é: ", result)
 }
 
+// Subtração
+
+const subtração = (a, b) => (a - b).toFixed(2)
+
+const subtraçãoService = async () => {
+  const valueOne = readlineSync.questionFloat("Insira o primeiro valor: ")
+  const valueTwo = readlineSync.questionFloat("Insira o segundo valor: ")
+
+  const result = subtração(parseFloat(valueOne), parseFloat(valueTwo))
+  console.log("O resultado da divisão é: ", result)
+}
+
 const main = () => {
-  const actions = ["soma", "multiplicação", "divisão"]
+  const actions = ["soma", "multiplicação", "divisão", "subtração"]
+
   const index = readlineSync.keyInSelect(actions, "Escolha uma opção")
 
-  if (actions[index] == "soma") somaService()
-  else if (actions[index] == "multiplicação") multiplicaçãoService()
-  else if (actions[index] == "divisão") divisaoService()
+  switch (actions[index]) {
+    case "soma":
+      somaService()
+    case "multiplicação":
+      multiplicaçãoService()
+    case "divisão":
+      divisaoService()
+    case "subtração":
+      subtraçãoService()
+  }
 }
 
 module.exports = main()
